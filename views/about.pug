@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  .main.container
+    .row
+      .col-md-8.col-md-offset-2
+        h1.display-4.m-b-2 About Us
+        p We are pusuing graduation in computer science and enginnering from Dr. AITH Kanpur.
+        p We to provide best content for learning. everyone wants to learn and gain new skills but confused about where to start, we provide a path to succes.
+        - const pstyle = {"text-align": "center", "margin-bottom": "40px" , "margin-top":"50px"}
+        h1(style=pstyle) Developer Team
+    .aboutwa
+      .column
+        .card1
+          img(src='/images/sanju.jpg', alt='sanjan', style='width:100%')
+          h4 Sanjana Gupta
+          p CEO &amp; Founder <br>Frontend Developer 
+        .card2
+          img(src='/images/nihal.jpg', alt='sanjan', style='width:100%')
+          h4 Nihal Shukla
+          p Co-Founder <br>Backend Developer
+    .started    
+      if currentUser
+        a.btn.btn-info-outline.btn-lg.m-t-1(href='/home') Get Started.
+      else
+        a.btn.btn-info-outline.btn-lg.m-t-1(href='/register') Get Started.

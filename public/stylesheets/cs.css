@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+  }
+  body { 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .cs {
+    overflow: hidden;
+    background-color: rgb(40, 35, 85);
+    padding: 0px;
+  }
+  .cs .first {
+     float: left;
+     /* border: 2px solid black; */
+  }
+  .cs img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      margin: 1vw;
+  }
+  .cs a {
+      text-decoration: none;
+      color: white;
+      vertical-align: middle;
+  }
+
+  @media screen and (max-width: 800px) {
+    .cs h1 {
+        font-size: 20px;
+    }
+}
+  /* .cs div {
+      width: 10%;
+      margin-top: auto;
+      margin-bottom: auto;      
+  } */
+
+.main {
+    width: 100%;
+}
+  .tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+  }
+  
+  .tablink:hover {
+    background-color: #777;
+  }
+  
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+  }
+  
+  /* #Home {background-color: red;}
+  #News {background-color: green;}
+  #Contact {background-color: blue;}
+  #About {background-color: orange;} */
+
+  .tabcontent {
+    /* background-color: khaki; */
+    /* opacity: 0.4; */
+    background-image: url("bg.jpg");
+    padding: 20px;
+    color:#1d2a33;
+  }
+  .tabcontent button{
+    /* background-color: indianred; */
+    border: none;
+    font-size: 15px;
+    margin-top: 1vw;
+    border-radius: 5px;
+    margin-left: 20px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 5px grey;
+    /* background-color: white; */
+    /* margin-right:70px: ; */
+  }
+  .subject button {
+    background-color: black;
+    color: white;     
+}
+  .tabcontent button:hover {
+    background-color: rgb(214, 123, 123);
+    box-shadow: 2px 2px 5px 2px rgb(236, 228, 228);
+    border: none;
+  }
+  .subject{
+    box-shadow: 2px 2px 5px 2px black;
+    padding: 5px;
+    margin: 25px;
+    background-color: white;
+    /* opacity: 0.8; */
+  }
+
+  .s {
+    /* margin-top: 15px; */
+    background-color: black;
+    width: 20%;
+    padding-top:0px ;
+    height: 50px;
+    color: white;
+    /* font-size: 5vw; */
+    /* font-weight: 600; */
+  }
+  .s h2{
+    /* margin-top: 12px; */
+    font-size: 18px;
+    text-align: center;
+    /* border: 2px solid red;   */
+  }
+  /* .logoutwa{
+    margin-top: 2%;
+    margin-right: 5%;
+    float: right;
+    color: whitesmoke;
+    background: #1d2a33;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: .375rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+  } */
+  @media screen and (max-width: 800px) {
+    /* .logoutwa{
+      font-size: .5rem;
+    } */
+      .s h2 {
+          font-size: 13px;
+      }
+  }
+
+
+  .social-links{
+    /* float: left; */
+    display: flex;
+    overflow: hidden;
+    padding:20px ;
+    justify-content: space-around;
+    background-color: black;
+    height: 200px;
+  }
+  .about, .Quick-links, .Contribute {
+    width: 25%;
+    /* border: 2px solid red; */
+    
+  }
+  .copyright{
+    width: 100%;
+    color: #f9f9f9;
+    text-align: center;
+    background-color: black;
+    height: 25px;
+    padding-top: 4px;
+  }
+  .social-links a:hover {
+    background-color: #717171; 
+  }
+  .social-links a, .social-links p{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 15px;
+  }
+  .social-links h2{
+    font-size: 2rem;
+    color: white;
+  }
+  @media screen and (max-width: 600px) {
+    .logoutwa{
+      font-size: .5rem;
+    }
+    
+    .social-links h2 {
+      font-size: 15px;
+    }
+    .social-links a {
+      font-size: 15px;
+    }
+    .about {
+      margin-right: 20px;
+    }
+  }

@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  .main.container.text-xs-center
+    h1.display-3 CODE-HARD <br> Learn in the best way
+    p.lead Choose from our large collection of contents
+    if currentUser
+      a.btn.btn-info-outline.btn-lg(href='/home') Get Started
+    else
+      a.btn.btn-info-outline.btn-lg(href='/register') Get Started
+

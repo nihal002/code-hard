@@ -1,0 +1,218 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  title home
+  link(rel='stylesheet', href='/stylesheets/home.css')
+  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+.header
+  img(src='/images/logo.jpg')
+  a(href='home')
+    h1 CoDe HaRd
+  .right
+    input(type='text', placeholder='Search..')
+    i.icn-logo.material-icons
+    a(href='/logout')
+      button#logout Logout
+#myTopnav.topnav
+  .dropdown
+    a(href='/bookcorner')
+      button.dropbtn BOOK CORNER
+  .dropdown
+    button.dropbtn DATA STRUCTURE
+    .dropdown-content
+      a(href='#') Array
+      a(href='#') Linked List
+      a(href='#') Stack
+      a(href='#') Queue
+      a(href='#') Binary Tree
+      a(href='#') Binary search Tree
+      a(href='#') Heap
+      a(href='#') Hashing
+      a(href='#') Graph
+      a(href='#') Advance Data Structure
+      a(href='#') Matrix
+      a(href='#') String
+  .dropdown2
+    button.dropbtn2 ALGORITHMS
+    .dropdown-content2
+      a(href='#') Analysis Of Algorithm
+      a(href='#') Searching Algorithm
+      a(href='#') Sorting Algorithm
+      a(href='#') Graph Algorithm
+      a(href='#') Geometric Algorithm
+      a(href='#') Randomized Algorithm
+      a(href='#') Greedy Algorithm
+      a(href='#') Dynamic programming
+      a(href='#') Divide And Conquer
+      a(href='#') Backtracking
+      a(href='#') Branch and Bound
+  .dropdown3
+    button.dropbtn3 LANGUAGES
+    .dropdown-content3
+      a(href='#') C
+      a(href='#') C++
+      a(href='#') Java
+      a(href='#') python
+      a(href='#') SQL
+      a(href='#') HTML
+      a(href='#') CSS
+      a(href='#') Javascript
+      a(href='#') PHP
+  .dropdown4
+    button.dropbtn4 ADVANCE TECHNOLOGIES
+    .dropdown-content4
+      a(href='#') Internet Of Things
+      a(href='#') Natural Language Processing
+      a(href='#') Cloud Computing
+      a(href='#') Hologram
+      a(href='#') Machine Learning
+      a(href='#') Artificial Intelligence
+  .dropdown5
+    button.dropbtn5 GATE CORNER
+    .dropdown-content5
+      a(href='#') Operating System
+      a(href='#') Computer Organisation
+      a(href='#') Digital Logic Design
+      a(href='#') ComputerNetwork
+      a(href='#') Compiler Design
+      a(href='#') Programming &amp; Data Structure
+      a(href='#') Algoritms
+      a(href='#') Discrete Mathematics
+      a(href='#') Aptitude
+      a(href='#') Theory Of Automata
+  a.icon(href='javascript:void(0);', style='font-size:15px;', onclick='myFunction()')
+    i.fa.fa-bars
+script.
+  function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+  x.className += " responsive";
+  } else {
+  x.className = "topnav";
+  }
+  }
+.noticeoftheday
+  span#btext Important Notice:
+  marquee(direction='left', onmouseover='this.stop()', onmouseout='this.start()')
+    a.notice(href='#')
+      | Registration will start on 18 january 2020
+.row
+  #first.column
+    .sidenav
+      a#aith(href='/aith')
+        | AITH CORNER
+        i.fa.fa-caret-down
+      button.sidenav-dropdown-btn
+        | ONLINECOURSES
+        i.fa.fa-caret-down
+      .dropdown-container
+        a(href='edx') EDX
+        a(href='nptel') NPTEL
+        a(href='#') COURSERA
+        a(href='#') UDEMY
+        a(href='#') GEEKS FOR GEEKS
+      button.sidenav-dropdown-btn
+        | CONTRTIBUTE
+        i.fa.fa-caret-down
+      .dropdown-container
+        a(href='writeanartical') WRITE AN ARTICLE
+        a(href='#') UPLOAD CONTENT
+        a(href='#') GIVE FEEDBACK
+      button.sidenav-dropdown-btn
+        | PROJECTS
+        i.fa.fa-caret-down
+      .dropdown-container
+        a(href='#') WEB PROJECTS
+        a(href='#') ANDROID PROJECTS
+        a(href='#') ML PROJECTS
+      button.sidenav-dropdown-btn
+        | CONTESTS
+        i.fa.fa-caret-down
+      .dropdown-container
+        a(href='#') CODING CONTEST
+    script.
+      var dropdown = document.getElementsByClassName("sidenav-dropdown-btn");
+      var i;
+      for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+      }
+      else {
+      dropdownContent.style.display = "block";
+      }
+      });
+      }
+  #sec.column
+    .slideshow-container
+      .mySlides.fade
+        .numbertext 1 / 3
+        img(src='/images/2.jpg', style='width:100%')
+        // <div class="text">Caption Text</div>
+      .mySlides.fade
+        .numbertext 2 / 3
+        img(src='/images/3.jpg', style='width:100%')
+        // <div class="text">Caption Two</div>
+      .mySlides.fade
+        .numbertext 3 / 3
+        img(src='/images/4.jpg', style='width:100%')
+        // <div class="text">Caption Three</div>
+      a.prev(onclick='plusSlides(-1)') &#x276E;
+      a.next(onclick='plusSlides(1)') &#x276F;
+    script.
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+      showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+      showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      }
+.social-links
+  section.about
+    h2 CODE-HARD
+    p learn in the best way.
+    .social-icons-footer
+      i.fab.fa-facebook
+      i.fab.fa-twitter-square
+      i.fab.fa-instagram
+      i.fab.fa-google-plus-square
+  section.Quick-links
+    h2 Quick links
+    a(href='#') Question papers
+    br
+    a(href='#') E-book
+    br
+    a(href='#') course
+  section.Subscribe
+    h2 Contribute
+    a(href='writeanartical.html') write an article
+    br
+    a(href='#') upload lecture pdf
+    br
+    a(href='#') post video lecture
+    br
+.copyright
+  | Copyright &copy;. Code Hard
+  script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q', crossorigin='anonymous')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')

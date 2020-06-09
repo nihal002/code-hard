@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="header">
+        <img src="logo.jpg">
+        <a href="home.html"><h1>CoDe HaRd</h1></a>
+        <div class="right">
+            <input type="text" placeholder="Search..">
+
+            <!-- <script async src="https://cse.google.com/cse.js?cx=013618367326602875988:vtlgw5u6dyj"></script>
+<div class="gcse-search"></div> -->
+
+            <a href="#"><button id="logout">Logout</button></a>
+        </div>
+    </div>
+    
+
+    <div class="topnav" id="myTopnav">
+        <!-- <input class="se" type="text" placeholder="Search.."> -->
+        <div class="dropdown">
+            <button class="dropbtn">DATA STRUCTURE</button>
+            <div class="dropdown-content">
+            <a href="#">Array</a>
+            <a href="#">Linked List</a>
+            <a href="#">Stack</a>
+            <a href="#">Queue</a>
+            <a href="#">Binary Tree</a>
+            <a href="#">Binary search Tree</a>
+            <a href="#">Heap</a>
+            <a href="#">Hashing</a>
+            <a href="#">Graph</a>
+            <a href="#">Advance Data Structure</a>
+            <a href="#">Matrix</a>
+            <a href="#">String</a>
+            </div>
+          </div>
+          <div class="dropdown2">
+            <button class="dropbtn2">ALGORITHMS</button>
+            <div class="dropdown-content2">
+            <a href="#">Analysis Of Algorithm</a>
+            <a href="#">Searching Algorithm</a>
+            <a href="#">Sorting Algorithm</a>
+            <a href="#">Graph Algorithm</a>
+            <a href="#">Geometric Algorithm</a>
+            <a href="#">Randomized Algorithm</a>
+            <a href="#">Greedy Algorithm</a>
+            <a href="#">Dynamic programming</a>
+            <a href="#">Divide And Conquer</a>
+            <a href="#">Backtracking</a>
+            <a href="#">Branch and Bound</a>
+            </div>
+          </div>
+          <div class="dropdown3">
+            <button class="dropbtn3">LANGUAGES</button>
+            <div class="dropdown-content3">
+              <a href="#">C</a>
+              <a href="#">C++</a>
+              <a href="#">Java</a>
+              <a href="#">python</a>
+              <a href="#">SQL</a>
+              <a href="#">HTML</a>
+              <a href="#">CSS</a>
+              <a href="#">Javascript</a>
+              <a href="#">PHP</a>
+            </div>
+          </div>
+          <div class="dropdown4">
+            <button class="dropbtn4">ADVANCE TECHNOLOGIES</button>
+            <div class=dropdown-content4>
+              <a href="#">Internet Of Things</a>
+              <a href="#">Natural Language Processing</a>
+              <a href="#">Cloud Computing</a>
+              <a href="#">Hologram</a>
+              <a href="#">Machine Learning</a>
+              <a href="#">Artificial Intelligence</a>
+            </div>
+          </div>
+          <div class="dropdown5">
+            <button class="dropbtn5">GATE CORNER</button>
+            <div class="dropdown-content5">
+              <a href="#">Operating System</a>
+              <a href="#">Computer Organisation</a>
+              <a href="#">Digital Logic Design</a>
+              <a href="#">ComputerNetwork</a>
+              <a href="#">Compiler Design</a>
+              <a href="#">Programming & Data Structure</a>
+              <a href="#">Algoritms</a>
+              <a href="#">Discrete Mathematics</a>
+              <a href="#">Aptitude</a>
+              <a href="#">Theory Of Automata</a>
+            </div>
+          </div>
+          <!-- <a href="#" class="bk"><button >BOOK CORNER</button></a> -->
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776</a>
+        
+    </div>
+
+    <script>
+        function myFunction() {
+        //   document.querySelector('se.input').style.display = none;
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+
+<div class="noticeoftheday">
+    <span id="btext">Important Notice:</span>
+    <marquee direction="left" onmouseover="this.stop()" onmouseout="this.start()">
+      <a href="#" class="notice">
+        <!-- <p class="datetime">13 jan 2020</p> -->
+        Registration will start on 18 january 2020</a>
+    </marquee>  
+</div>
+    
+<div class="row">
+    <div class="column" id="first">
+      <div class="sidenav">
+        <a href="aith.html" id="aith">AITH CORNER
+          <i class="fa fa-caret-down"></i>
+        </a>
+        
+      <button class="sidenav-dropdown-btn">ONLINECOURSES
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="edx.html">EDX</a>
+          <a href="nptel.html">NPTEL</a>
+          <a href="#">COURSERA</a>
+          <a href="#">UDEMY</a>
+          <a href="#">GEEKS FOR GEEKS</a>
+        </div>
+          <button class="sidenav-dropdown-btn">CONTRTIBUTE
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="writeanartical.html">WRITE AN ARTICLE</a>
+            <a href="#">UPLOAD CONTENT</a>  
+            <a href="#">GIVE FEEDBACK</a>          
+           </div>
+          <button class="sidenav-dropdown-btn">PROJECTS
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">WEB PROJECTS</a>
+            <a href="#">ANDROID PROJECTS</a>
+            <a href="#">ML PROJECTS</a>
+          </div>
+          <button class="sidenav-dropdown-btn">CONTESTS
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">CODING CONTEST</a>
+          </div>
+        </div>
+      <script>
+      var dropdown = document.getElementsByClassName("sidenav-dropdown-btn");
+      var i;
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        }
+        else {
+          dropdownContent.style.display = "block";
+        }
+        });
+      }
+      </script>
+    </div>
+    <div class="column" id="sec">
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="2.jpg".jpg" style="width:100%">
+          <!-- <div class="text">Caption Text</div> -->
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="3.jpg" style="width:100%">
+          <!-- <div class="text">Caption Two</div> -->
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="4.jpg" style="width:100%">
+          <!-- <div class="text">Caption Three</div> -->
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+  </div>
+  </div>
+
+
+  <footer>
+    <div class="social-links">
+    <div class="about">
+      <h2>CODE HARD</h2>
+      <p>This is an Educational website providing attractive content to learn.</p>
+      <div class="social-icons-footer">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-google-plus-square"></i>
+      </div>
+    </div>
+    <div class="Quick-links">
+                <h2>COMPANY</h2>
+                <a href="#">About Us</a><br>
+                <a href="#">Contact Us</a><br>
+                <a href="#">Join Us</a>
+    </div>
+    <div class="Contribute">
+                <h2>CONTRIBUTE</h2>
+                <a href="writeanartical.html">Write an Article</a><br>
+                <a href="#">Upload Lecture pdf</a><br>
+                <a href="#">Write Interview Experience</a><br>
+                <a href="#">Give Feedback</a><br>            
+    </div>
+  </div>
+  
+  <div class="copyright">Copyright ©. Code Hard
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

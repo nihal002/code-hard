@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>aith</title>
+    <link rel="stylesheet" href="aith.css">
+    <!-- <link rel="stylesheet" href="home.css"> -->
+</head>
+<body>
+    <div class="header">
+        <img src="logo.jpg">
+        <a href="home.html"><h1>CoDe HaRd</h1></a>
+        <div class="right">
+            <input type="text" placeholder="Search..">
+            <a href="#"><button id="logout">Logout</button></a>
+        </div>
+    </div>
+  <div class="head">
+        <div class="website-header">
+            <img src="aith.jpg">
+                <h1 class="text">DR. AMBEDKAR INSTITUTE OF TECHNOLOGY <br> FOR HANDICAPPED, KANPUR</h1>
+                <div class="direction">
+                    <a href="https://goo.gl/maps/gQh7bouBxoCgDWDk8">Direction</a>
+                </div>
+        </div>
+        <!-- <nav class="navbar">
+            <ul>
+                <li><a href="#section2">DEGREE</a></li>
+                <li><a href="http://bteup.ac.in/SYLLABUS.aspx?type=1">DIPLOMA</a></li>
+            </ul>
+        </nav> -->
+  </div>
+    
+    <div id="section2">
+      
+        <a href="cs.html">COMPUTER SCIENCE</a>
+        
+      
+      
+        <a href="it.html">INFORMATION TECHNOLOGY</a>
+        
+      
+      
+        <a href="ch.html">CHEMICAL ENGINEERING</a>
+        
+      
+      
+        <a href="bt.html">BIOTECHNOLOGY</a>
+       
+      
+        <a href="el.html">ELECTRONICS</a>
+        
+      
+    </div>
+  
+
+    <!-- <div class="ss">
+      <slider class="slide-show">
+        <slide><p></p></slide>
+        <slide><p></p></slide>
+        <slide><p></p></slide>
+        <slide><p></p></slide>
+      </slider>
+      </div> -->
+
+      <div class="column" id="sec">
+        <div class="slideshow-container">
+  
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="2.jpg".jpg" style="width:100%">
+            <!-- <div class="text">Caption Text</div> -->
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="3.jpg" style="width:100%">
+            <!-- <div class="text">Caption Two</div> -->
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="4.jpg" style="width:100%">
+            <!-- <div class="text">Caption Three</div> -->
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    </div>
+      
+
+
+    <div class="clg">
+      <h1>ABOUT A.I.T.H</h1>
+      <p> Dr. Ambedkar Institute of Technology for Handicapped (A.I.T.H.) was established in 1997 at Kanpur, 
+        (U.P., India) by Government of Uttar Pradesh under World Bank assisted project through Technical 
+        Education Program. A.I.T.H. is an autonomous institute imparting technical education to students through 
+        undergraduate (B.Tech.) and Diploma level courses. The entire facility is barrier free and committed to 
+        global vision, where normal and disabled students study together. The Undergraduate level course is open 
+        for both (normal and disabled) where as the diploma level course is exclusively for physically disabled.</p>
+    </div>
+
+    <script>
+        function openTab(tabName) {
+          var i, x;
+          x = document.getElementsByClassName("containerTab");
+          for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        document.getElementById(tabName).style.display = "block";
+}  
+    </script>
+    
+
+    <footer>
+        <div class="social-links">
+        <div class="about">
+          <h2>CODE HARD</h2>
+          <p>This is an Educational website providing attractive content to learn.</p>
+          <div class="social-icons-footer">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-google-plus-square"></i>
+          </div>
+        </div>
+        <div class="Quick-links">
+                    <h2>COMPANY</h2>
+                    <a href="#">About Us</a><br>
+                    <a href="#">Contact Us</a><br>
+                    <a href="#">Join Us</a>
+        </div>
+        <div class="Contribute">
+                    <h2>CONTRIBUTE</h2>
+                    <a href="writeanartical.html">Write an Article</a><br>
+                    <a href="#">Upload Lecture pdf</a><br>
+                    <a href="#">Write Interview Experience</a><br>
+                    <a href="#">Give Feedback</a><br>            
+        </div>
+      </div>
+
+      <div class="copyright">Copyright ©. Code Hard
+    </div>
+  </footer>
+</body>
+
+
+
+</html>

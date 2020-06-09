@@ -1,0 +1,277 @@
+
+/* Base Styles */
+
+body {
+	background: #1d2a33 url('../images/bg.jpg') no-repeat;
+	background-size: cover; 
+}
+
+a:hover {
+	color: rgba(49,176,213, .7);
+}
+
+/* Component Styles */
+
+.navbar {
+	padding: 1rem 0;
+	background: rgba(0,0,0, .25);
+}
+.lead {
+	margin-bottom: 2.5rem;
+}
+.main {
+	color: #fff;
+	min-height: calc(100vh - 34px);
+}
+.foot {
+	font-size: .85rem;
+	padding: .5rem 0;
+	color: rgba(255,255,255, .6);
+}
+
+/* Modifier Styles */
+
+.nav-items .nav-link {
+	margin: 0 1rem;
+}
+.navbar-brand {
+	margin: 0;
+}
+.navbar .nav-link,
+.navbar .btn {
+	text-transform: uppercase;
+	font-size: .95rem;
+}
+.list-group {
+	color: initial;
+}
+.label {
+	font-size: .88rem;
+	vertical-align: top;
+	margin: 3px 0 0 4px;
+}
+
+/* Button Styles */
+
+.btn-primary {
+	background: #417aba;
+	border-color: #417aba;
+}
+.btn-info {
+	background-color: #31b0d5; 
+	border-color: #2aabd2;
+	
+}
+.btn-info:hover {
+	background-color: #5bc0de;
+	border-color: #5bc0de;
+}
+.btn-light {
+	color: rgba(255,255,255, .75);
+	background: rgba(255,255,255, .12);
+}
+.btn-light:hover {
+	background: rgba(128, 65, 65, 0.2);	
+}
+.active,
+.btn {
+	transition: .4s;
+}
+
+/* Icon Styles */
+
+.icn-logo {
+	margin: 3px 3px 0;
+	float: left;
+}
+.icn-person {
+	font-size: 50px;
+	border-radius: 50%;
+	border: solid 2px;
+	padding: .5rem;
+}
+.avatar {
+	width: 35px;
+	margin-right: 18px;
+	border: solid 2px rgba(255,255,255, .75);
+}
+.options {
+	display: none;
+}
+.list-group-item:hover .options {
+	display: block;
+}
+.options .material-icons {
+	font-size: 1.25rem;
+	cursor: pointer;
+	margin-left: 1rem;
+	color: rgba(0,0,0, .35);
+}
+.options .material-icons:hover {
+	color: initial;
+}
+
+.favorite-book {
+  margin-top: 30px;
+}
+.row{
+	text-align: center;
+}
+.aboutwa{
+	margin-left: 20%;
+}
+.column{
+	content: "";
+  clear: both;
+  display: table;
+  margin-bottom: 10%;
+}
+.card1{
+	height: 10%;
+	float: left;
+  	width: 25%;
+  	margin-left: 10%;
+	box-shadow: 0px 5px 12px 0px rgb(75, 208, 241);
+  	text-align:center;
+	display:block;
+	background-color: transparent;
+	border: 1px solid transparent;
+
+}
+.card1 h4{
+	padding: 5px;
+	color: white;
+}
+.card1 img{
+	height: 7.5%;
+	border-radius: 50%;
+}
+.card2{
+	height: 10%;
+	float: left;
+  	width: 25%;
+  	margin-left: 10%;
+	box-shadow: 0px 5px 12px 0px rgb(75, 208, 241);
+  	text-align:center;
+	display:block;
+	background-color: transparent;
+	border: 1px solid transparent;
+
+}
+.card2 h4{
+	padding: 10px;
+	color: white;
+}
+.card2 img{
+	height: 10%;
+	border-radius: 50%;
+}
+.started{
+	text-align: center;
+	margin-bottom: 5%;
+}
+.fa {
+	padding: 20px;
+	font-size: 10px;
+	width: 48px;
+	text-align: center;
+	text-decoration: none;
+	margin: 50px 10px 50px;
+	border-radius: 50%;
+  }
+  
+  .fa:hover {
+	  opacity: 0.7;
+  }
+  
+  .fa-facebook {
+	background: #3B5998;
+	color: white;
+  }
+  
+  .fa-twitter {
+	background: #55ACEE;
+	color: white;
+  }
+  
+  .fa-google {
+	background: #dd4b39;
+	color: white;
+  }
+  .fa-linkedin {
+	background: #007bb5;
+	color: white;
+  }
+  .fa-instagram {
+	background: #125688;
+	color: white;
+  }
+  .form-group{
+	  text-align: left;
+  }
+@media (min-width: 0) and (max-width: 47em) {
+	.fa{
+		width: 30px;
+	}
+	.card1{
+		float: left;
+		margin-left: 0%;
+		width: 70%;
+		display: block;
+		margin-bottom: 20%;
+	}
+	.card1 img{
+		height: 7%;
+		border-radius: 50%;
+	}
+	.card2{
+		float: left;
+		margin-left: 0%;
+		width: 70%;
+		display: block;
+		margin-bottom: 20%;
+	}
+	.card2 img{
+		border-radius: 50%;
+	}
+	.display-3{
+		font-size: 2.5rem ;
+	}
+	.navbar {
+		background: #1d2a33;
+	}
+	.nav-items .nav-item {
+		float: none;
+	}
+	.nav-items .nav-link  {
+		padding: .65rem 0;
+		display: block;
+	}
+	.nav-items {
+		padding: 1rem 0;
+		clear: left;
+	}
+	.navbar .btn {
+		margin-left: 1rem;
+	}
+	.main {
+		padding-top: 6rem;
+	}
+}
+
+@media (min-width: 48em) { 
+	.navbar {
+		min-height: 70px;
+	}
+	.navbar-nav .container {
+		display: -webkit-flex;
+		display: flex;
+	}
+	.nav-items {
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.main {
+		padding-top: 8rem;
+	}
+}
